@@ -4,6 +4,6 @@ import { MailtrapProvider } from "./mailtrap";
 import { SendgridProvider } from "./sendgrid";
 
 export const SendMailProvider = {
-    useClass: !isProduction ? SendgridProvider : MailtrapProvider,
+    useClass: isProduction ? SendgridProvider : MailtrapProvider,
     provide: MailProvider
 };
