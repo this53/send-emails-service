@@ -1,12 +1,11 @@
 import { Module, ValidationPipe } from '@nestjs/common';
 import { APP_FILTER, APP_PIPE } from '@nestjs/core';
-import { DatabaseModule } from './database/database.module';
 import { ModulesModule } from './modules/modules.module';
 import { AllExceptionsFilter } from './shared/errors/all-exceptions.filter';
 
 @Module({
 	imports: [
-		DatabaseModule,
+		//DatabaseModule,
 		ModulesModule,
 	],
 	controllers: [],

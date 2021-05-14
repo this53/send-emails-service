@@ -10,10 +10,10 @@ interface Params{
 
 export const templateHTML = (params: Params) => {
     return `
-    <div style="width: 100%;max-width: 600px;height: auto;margin: 0 auto;border: 1px solid #ddd;padding: 0; overflow: hidden;">
-        ${header(params.header)}
-        ${body(params.body)}
-        ${footer(params.footer)}
-    </div>
+        <div style="width: 100%;max-width: 600px;height: auto;margin: 0 auto;border: 1px solid #ddd;padding: 0; overflow: hidden;">
+            ${header(params.header)}
+            ${body(params.body)}
+            ${footer(params.footer)}
+        </div>
     `;
 }

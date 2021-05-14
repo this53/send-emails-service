@@ -29,6 +29,7 @@
     "@nestjs/microservices": "^7.6.15",
     "@nestjs/mongoose": "^7.2.3",
     "@nestjs/schedule": "^0.4.3",
+    "@sendgrid/mail": "^7.4.4",
     "amqp-connection-manager": "^3.2.0",
     "amqplib": "^0.7.1",
     "aws-sdk": "^2.906.0",

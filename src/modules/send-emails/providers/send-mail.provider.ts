@@ -1,9 +1,9 @@
 import { isProduction } from "~/environments";
 import { MailProvider } from "../interfaces/mail.provider";
 import { MailtrapProvider } from "./mailtrap";
-import { SESProvider } from "./ses";
+import { SendgridProvider } from "./sendgrid";
 
 export const SendMailProvider = {
-    useClass: !isProduction ? SESProvider : MailtrapProvider,
+    useClass: !isProduction ? SendgridProvider : MailtrapProvider,
     provide: MailProvider
 };
