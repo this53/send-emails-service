@@ -26,6 +26,9 @@ export class SendgridProvider extends MailProvider {
             },
             subject: message.subject,
             html: message.body,
+            templateId: message.templateId,
+            dynamicTemplateData: message.templateData,
+            replyTo: message.from.email,
             text: htmlToText(message.body, {
                 preserveNewlines: true,
                 wordwrap: 120,

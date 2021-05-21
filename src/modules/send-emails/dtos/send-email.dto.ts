@@ -8,4 +8,6 @@ export interface SendEmailDTO {
     readonly to: EmailDTO;
     readonly subject: string;
     readonly body: string;
+    readonly templateId: string;
+    readonly templateData: object;
 }

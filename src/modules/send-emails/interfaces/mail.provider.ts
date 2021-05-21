@@ -10,6 +10,8 @@ export interface Message {
     readonly to: User;
     readonly subject: string;
     readonly body: string;
+    readonly templateId: string;
+    readonly templateData: object;
 }
 
 export abstract class MailProvider {

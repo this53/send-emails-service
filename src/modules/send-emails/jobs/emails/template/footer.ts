@@ -14,6 +14,18 @@ export const footer = (params: FooterParams) => {
                     ${params.name}
                 </div>`
             }
+            ${
+                params.email && `
+                <div style="width: 100%;height: auto;margin: 0 auto;border: 0;padding: 0; overflow: hidden;">
+                    ${params.email}
+                </div>`
+            }
+            ${
+                params.phone && `
+                <div style="width: 100%;height: auto;margin: 0 auto;border: 0;padding: 0; overflow: hidden;">
+                    ${params.phone}
+                </div>`
+            }
         </div>
     `;
 }
