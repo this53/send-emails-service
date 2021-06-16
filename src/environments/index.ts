@@ -21,7 +21,15 @@ export const QUEUE_PASSWORD: string = process.env.QUEUE_PASSWORD;
 export const QUEUE_TIMEOUT: number = parseInt(process.env.QUEUE_TIMEOUT, 10);
 
 // ------- DATABASE -------
-export const DB_URL: string = process.env.DB_URL;
+export const DB_NAME: string = process.env.DB_URL;
+export const DB_HOST: string = process.env.DB_HOST;
+export const DB_PORT: number = parseInt(process.env.DB_PORT, 10);
+export const DB_USER: string = process.env.DB_USER;
+export const DB_PASSWORD: string = process.env.DB_PASSWORD;
+export const DB_OPTIONS: string = process.env.DB_OPTIONS;
+export const DB_TIMEOUT: number = parseInt(process.env.DB_TIMEOUT, 10);
+export const DB_PREFIX: string = process.env.DB_PREFIX;
+export const DB_URL: string = process.env.DB_URL || `${DB_PREFIX}://${DB_USER}:${DB_PASSWORD}@${DB_PORT ? DB_HOST + ":" + DB_PORT : DB_HOST}/${DB_NAME}${DB_OPTIONS ? "?" + DB_OPTIONS : ""}`;
 
 // ------- CREDENTIALS -------
 export const MAIL_ID: string = process.env.MAIL_ID;

@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: send-emails-service-service
+spec:
+  type: ClusterIP
+  selector:
+    app: send-emails-service
+  ports:
+    - port: 80
+      targetPort: 80

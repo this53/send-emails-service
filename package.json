@@ -31,7 +31,7 @@
     "@nestjs/schedule": "^0.4.3",
     "@sendgrid/mail": "^7.4.4",
     "amqp-connection-manager": "^3.2.0",
-    "amqplib": "^0.7.1",
+    "amqplib": "^0.8.0",
     "aws-sdk": "^2.906.0",
     "bull": "^3.22.5",
     "class-transformer": "^0.2.3",
