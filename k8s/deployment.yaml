@@ -67,6 +67,11 @@ spec:
                 secretKeyRef:
                   name: redis-secret
                   key: queue-port
+            - name: QUEUE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: redis-secret
+                  key: queue-username
             - name: QUEUE_PASSWORD
               valueFrom:
                 secretKeyRef:

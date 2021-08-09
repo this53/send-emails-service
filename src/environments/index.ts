@@ -17,6 +17,7 @@ export const MICROSERVICE_URL: string = process.env.MICROSERVICE_URL;
 // ------- QUEUE -------
 export const QUEUE_PORT: number = parseInt(process.env.QUEUE_PORT, 10);
 export const QUEUE_HOST: string = process.env.QUEUE_HOST;
+export const QUEUE_USERNAME: string = process.env.QUEUE_USERNAME;
 export const QUEUE_PASSWORD: string = process.env.QUEUE_PASSWORD;
 export const QUEUE_TIMEOUT: number = parseInt(process.env.QUEUE_TIMEOUT, 10);
 
