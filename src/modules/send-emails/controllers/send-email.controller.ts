@@ -7,14 +7,10 @@ const messagePatternName = (action: string): string => `send-emails:${action}`;
 
 @Controller('send-emails')
 export class SendEmailController {
-    constructor(
-        private readonly sendEmailService: SendEmailService,
-    ) { }
+  constructor(private readonly sendEmailService: SendEmailService) {}
 
-    @EventPattern(messagePatternName("send"))
-    async send(
-        @Payload() data: SendEmailDTO
-    ) {
-        return await this.sendEmailService.send(data);
-    }
+  @EventPattern(messagePatternName('send'))
+  async send(@Payload() data: SendEmailDTO) {
+    return await this.sendEmailService.send(data);
+  }
 }

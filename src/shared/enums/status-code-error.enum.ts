@@ -1,5 +1,5 @@
-import { HttpStatus } from "@nestjs/common";
+import { HttpStatus } from '@nestjs/common';
 
-export enum StatusCodeError{
-    INTERNAL = HttpStatus.INTERNAL_SERVER_ERROR,
+export enum StatusCodeError {
+  INTERNAL = HttpStatus.INTERNAL_SERVER_ERROR
 }

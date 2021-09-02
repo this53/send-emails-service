@@ -5,12 +5,8 @@ import { CleanersModule } from './cleaners/cleaners.module';
 import { SendEmailModule } from './send-emails/send-email.module';
 
 @Module({
-	imports: [
-		BullModule.forRoot(bullConfig),
-		CleanersModule,
-		SendEmailModule,
-	],
-	controllers: [],
-	providers: [],
+  imports: [BullModule.forRoot(bullConfig), CleanersModule, SendEmailModule],
+  controllers: [],
+  providers: []
 })
-export class ModulesModule { }
+export class ModulesModule {}
