@@ -4,8 +4,6 @@ import { databaseConfig } from '~/config/database';
 import { DB_URL } from '~/environments';
 
 @Module({
-    imports: [
-        MongooseModule.forRoot(DB_URL, databaseConfig),
-    ],
+  imports: [MongooseModule.forRoot(DB_URL, databaseConfig)]
 })
-export class DatabaseModule { }
+export class DatabaseModule {}

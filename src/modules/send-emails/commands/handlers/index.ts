@@ -1,5 +1,3 @@
-import { SendEmailHandler } from "./send-email.handler";
+import { SendEmailHandler } from './send-email.handler';
 
-export const CommandHandlers = [
-    SendEmailHandler,
-];
+export const CommandHandlers = [SendEmailHandler];

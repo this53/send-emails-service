@@ -1,11 +1,11 @@
 import * as dotenv from 'dotenv';
-dotenv.config()
+dotenv.config();
 
 // ------- ENVIRONMENT -------
 export const NODE_ENV_TYPES = {
-    DEV: 'development',
-    PROD: 'production',
-    TEST: 'test',
+  DEV: 'development',
+  PROD: 'production',
+  TEST: 'test'
 };
 export const NODE_ENV: string = process.env.NODE_ENV || NODE_ENV_TYPES.DEV;
 export const isDevelopment: boolean = NODE_ENV === NODE_ENV_TYPES.DEV;
@@ -30,7 +30,11 @@ export const DB_PASSWORD: string = process.env.DB_PASSWORD;
 export const DB_OPTIONS: string = process.env.DB_OPTIONS;
 export const DB_TIMEOUT: number = parseInt(process.env.DB_TIMEOUT, 10);
 export const DB_PREFIX: string = process.env.DB_PREFIX;
-export const DB_URL: string = process.env.DB_URL || `${DB_PREFIX}://${DB_USER}:${DB_PASSWORD}@${DB_PORT ? DB_HOST + ":" + DB_PORT : DB_HOST}/${DB_NAME}${DB_OPTIONS ? "?" + DB_OPTIONS : ""}`;
+export const DB_URL: string =
+  process.env.DB_URL ||
+  `${DB_PREFIX}://${DB_USER}:${DB_PASSWORD}@${
+    DB_PORT ? DB_HOST + ':' + DB_PORT : DB_HOST
+  }/${DB_NAME}${DB_OPTIONS ? '?' + DB_OPTIONS : ''}`;
 
 // ------- CREDENTIALS -------
 export const MAIL_ID: string = process.env.MAIL_ID;
